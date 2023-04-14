@@ -1,0 +1,184 @@
+<!------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+                                >>>     H U M A N   I N T E R F A C E   C O M P U T I N G     <<<
+ 
+                                          Project 2  |  Implementation | CSS Stylesheet 
+ 
+                
+ 
+                                                 -----------------------------
+ 
+ 
+                                                        GROUP MEMBERS
+ 
+                                             > SYDNEY ZEULZKE  | Leader, Designer
+                                             > MARIHA AHAMMED  | Member, Designer
+                                             > EMMA MAGYARICS  | Member, Designer
+                                             > JULIA PANGONIS  | Member, Designer
+                                             > JOSHUA ROMISHER | Member, Designer
+                                      
+ 
+ 
+ 
+ 
+------------------------------------------------------------------------------------------------------------------------------->
+
+
+body{
+  margin: 0 px;
+}
+
+header.logoHead {
+  float: left;
+  background-color: white;
+  display: inline-block;
+}
+.logo {
+  max-width: 80%;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+nav {
+  height: 20%;
+  float: right;
+  background-color: white;
+  display: inline-block;
+  text-align: right;
+  top: 0;
+}
+
+}
+ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  text-align: right;
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: right;
+  padding: 30% 50px;
+  padding-bottom: 35%;
+  text-decoration: none;
+  font-family: Garamond, Times New Roman, sans-serif;
+}
+
+li a:hover {
+  background-color: grey;
+}
+.logout {
+  position:absolute;
+  right:0;
+}
+
+#para{
+padding-left: 25%;
+max-width: 50%;
+padding-bottom: 20px;
+font-family: Aileron Regular, Garamond, Times New Roman;
+text-align: center;
+font-size: 17px;
+}
+
+#frapar{
+background-color: #cfcfcf;
+max-width: 50%;
+padding-right: 50px;
+padding-left: 50px;
+padding-bottom: 50px;
+padding-top: 45px;
+font-family: Aileron Regular, Garamond, Times New Roman;
+text-align: justify;
+}
+
+hr{
+border: 1px solid rgba(27, 25, 10, 0.5);
+}
+
+#logo{
+  border-radius: 50px;
+}
+#footer{
+background-color: #8da2a6;
+border: 2px solid white;
+color: white;
+}
+
+#offer{
+max-width: 60%;
+line-height: 2;
+}
+h2{
+font-variant: small-caps;
+font-family: Aileron Regular, Garamond, Times New Roman;
+}
+
+h1{
+font-variant: small-caps;
+font-family: Aileron Regular, Garamond, Times New Roman;
+}
+h3{
+font-variant: small-caps;
+font-family: Aileron Regular, Garamond, Times New Roman;
+}
+#table{
+max-width: 80%;
+}
+
+/* Container holding the image and the text */
+.container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+position: absolute; /* Position the background text */
+  bottom: 25%; /* At the bottom. Use top:0 to append it to the top */
+right: 25%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(260, 260, 260, 0.6); /* Black background with 0.5 opacity */
+  color: #000000; /* Grey text */
+  width: 50%; /* Full width */
+height: 50%;
+  padding: 50 px; /* Some padding */
+text-align: center;
+}
+
+/* for tables */
+table {
+			 
+  padding: 5%;
+  border-collapse: collapse;
+  max-width: 100%;
+  text-align: center;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+}
+
+tr:hover {background-color: #ffffff;}
+
+tr:nth-child(odd){
+  background-color: #cacfd4;
+}
+tr:nth-child(odd):hover{
+  background-color: #cfe3f5;
+}
