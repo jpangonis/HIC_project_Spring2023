@@ -496,5 +496,68 @@ circle[Attributes Style] {
     transform-origin: 0px 0px;
 }
 
+main{
+    text-align: center;
+    padding-bottom: 30 px;
+}
+h1{
+    text-align: center;
+    color: #4A7A8D;
+}
+h2{
+    color: #ADC1D0;
+    text-decoration-line: underline;
+    font-size: medium;
+    padding-bottom: 15px;
+}
 
+.contact-card{
+    display: flex;
+    padding: 15px 15px 15px 15px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+}
 
+.contact-image{
+    text-align: center;
+    display:block;
+    margin: auto;
+    background-color: #ADC1D0;
+    width: 40%;
+    height: 80%;
+}
+.contact-info{
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: #ADC1D0;
+    width: 40%;
+    height: 80%;
+}
+label{
+    font-size: 150%;
+    font-weight: bold;
+    display:block;
+    text-align: center;
+}
+name{
+    display:block;
+    text-align: center;
+}
+desc{
+    display:block;
+    text-align: center;
+}
+email{
+    display:block;
+    text-align: center;
+}
+.career-text{
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    display: block;
+}
