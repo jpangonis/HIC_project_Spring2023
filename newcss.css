@@ -1,0 +1,500 @@
+<!------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+                                >>>     H U M A N   I N T E R F A C E   C O M P U T I N G     <<<
+ 
+                                          Project 2  |  Implementation | CSS Stylesheet 
+ 
+                
+ 
+                                                 -----------------------------
+ 
+ 
+                                                        GROUP MEMBERS
+ 
+                                             > SYDNEY ZEULZKE  | Leader, Designer
+                                             > MARIHA AHAMMED  | Member, Designer
+                                             > EMMA MAGYARICS  | Member, Designer
+                                             > JULIA PANGONIS  | Member, Designer
+                                             > JOSHUA ROMISHER | Member, Designer
+                                      
+ 
+ 
+ 
+ 
+------------------------------------------------------------------------------------------------------------------------------->
+
+html, body {
+    font-family: 'Karla', sans-serif;
+    background: #f6f6f6;
+    margin: 0px;
+    padding: 0px;
+
+
+
+}
+
+body {
+    margin: 0px;
+    overflow-y: scroll; overflow-x:hidden;
+
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #eeeeee; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ADC1D0; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4A7A8D; 
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-width: 950px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-left: none;
+    z-index: 9999;
+}
+
+header #header-content {
+    position: absolute;
+    left: 5%;
+    right: 10%;
+    width: 85%;
+    height: 45%;
+    float:right;
+}
+header #header-content img{
+	border-radius: 50px;
+}
+
+
+div {
+    display: inline ;
+
+}
+
+header {
+    display: block;
+}
+header #header-content .icon {
+    position: relative;
+    z-index: 99999;
+    float: left;
+    margin: 25px 0px 0px 0px;
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 175%;
+    text-align: center;
+    background-color: #c3dfdf;
+}
+
+header #header-content nav.toplinks {
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    overflow: hidden;
+    width: calc(200px + 540px - 28px);
+    text-align: right;
+}
+header #header-content nav.botlinks {
+    position: absolute;
+    right: 0px;
+    bottom: -45px;
+    overflow: hidden;
+    width: calc(200px + 540px - 28px);
+    text-align: right;
+}
+
+nav {
+    display: block;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #ADC1D0;
+}
+
+header #header-content nav.toplinks a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 8.5px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    padding-top: 7px;
+    color: #888888;
+    border-top: 1px solid transparent;
+}
+
+header #header-content nav.botlinks a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 8.5px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    padding-top: 7px;
+    color: #888888;
+    border-top: 1px solid transparent;
+}
+
+header #header-content nav.toplinks a:hover {
+   padding-bottom: 4px;
+   border-bottom: 5px solid #ADC1D0;
+
+}
+
+header #header-content nav.botlinks a:hover {
+   padding-bottom: 4px;
+   border-bottom: 5px solid #ADC1D0;
+
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a {
+    color: #666666;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+#sidebar {
+    width: 100%;
+    min-width: 900px;
+    position: absolute;
+    z-index: 999;
+    top: 20%;
+    left: 0;
+}
+#sidebar .box{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 1000;
+    top: 10%;
+    left: 25%;
+    background-color:white;
+    opacity: 0.7;
+
+    text-align: center;
+}
+
+#sidebar .box .text{
+    padding: 0 0 0 0;
+    position: absolute;
+    z-index: 1001;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    font-family: Garamond;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 22px;
+    color: #444444;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+
+
+#sidebar .box .infotext{
+    padding: 0 0 0 0;
+    position: absolute;
+    z-index: 1001;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    font-family: 'Karla', sans-serif;
+    font-variant: small-caps;
+    font-weight: 300;
+    font-size: 15px;
+    color: #444444;
+    opacity: 1;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border: 1px solid #eeeeee;
+    border-right: none;
+    background-color: #ADC1D0; 
+    color:#ADC1D0;
+}
+
+.fa-caret-down:before {
+    content: "\f0d7";
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+
+}
+#footer {
+    position: block;
+    background-color: #ffffff;
+    color: #ADC1D0;
+
+}
+
+#footer .top {
+    padding: 30px 0px;
+}
+#footer .top, #footer .bottom {
+
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+#footer .top .left {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: ;
+}
+#footer .top .left dl {
+    margin-left: 10%;
+    text-transform: capitalize;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#footer .top .left dl dt {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.25em;
+}
+
+.t-gradient {
+    color: transparent;
+    background: linear-gradient(135deg, #4A7A8D, #ADC1D0);
+    -webkit-background-clip: text;
+    font-family: Garamond;
+    font-variant: small-caps;
+    font-weight: 800;
+}
+*, *:before, *:after {
+
+    box-sizing: border-box;
+}
+
+dt {
+    display: block;
+}
+#footer .top .left dl dd {
+    margin: 0;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-size: 8.5px;
+    letter-spacing: 3px;
+
+    color: #888888;
+}
+
+#footer .top .left dl dd:hover{
+   padding-bottom: -3px;
+   border-bottom: 3px solid #ADC1D0;
+   transition: all 0.2s ease-in-out;
+
+}
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+#footer .top + .bottom {
+    border-top: 1px solid #eeeeee;
+}
+
+#footer .bottom {
+    padding: 25px 10%;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+}
+
+form {
+    display: block;
+    margin-top: 0px;
+    margin-left: 100%;
+    color: #ADC1D0;
+
+}
+
+header #header-content nav.botlinks  .search-bar {
+
+    position: absolute;
+    margin-left: 10px;
+    padding-top: 20px;
+    color: #ADC1D0;
+}
+
+header #header-content nav.botlinks .search-bar input{
+    width: 200px;
+    height: 35px;
+    border-radius: 35px;
+    border: 1px solid #eeeeee;
+    padding: 0 30px 0 10px;
+    font-size: 8.5px;
+    color: #ADC1D0;
+    background-color: #ffffff;
+    display:block;
+}
+input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 8.5px;
+}
+button {
+    display: inline;
+}
+
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-weight: ;
+    font-stretch: ;
+    color: #ADC1D0;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    letter-spacing: 3px;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+
+}
+
+header #header-content nav.botlinks  .search-bar button{
+    position: relative;
+    top: 7.5px;
+    right: 7.5px;
+    cursor: pointer;
+    display: inline-block;
+    color: #ADC1D0;
+}
+
+button {
+    appearance: ;
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-weight: ;
+    font-stretch: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: #ADC1D0;
+    letter-spacing: 3px;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+
+}
+
+header #header-content nav.botlinks  .search-bar button svg{
+    display: block;
+    width: 20px;
+    height: 20px;
+    stroke: url(https://static.tumblr.com/ickcbh2/8yXpmw91c/style.css#gradient);
+    color: #ADC1D0;
+}
+svg[Attributes Style] {
+
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    color: #ADC1D0;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+circle[Attributes Style] {
+    cx: 11;
+    cy: 11;
+    r: 8;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+
+
