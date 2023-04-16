@@ -1,8 +1,8 @@
 <?php
 $num_products_on_each_page = 4;
-// The current page - in the URL, will appear as index.php?page=products&p=1, index.php?page=products&p=2, etc...
+// current page will appear as index.php?page=products&p=1, index.php?page=products&p=2, etc...
 $current_page = isset($_GET['p']) && is_numeric($_GET['p']) ? (int)$_GET['p'] : 1;
-// Select products ordered by the date added
+// select clause pulls prodcuts from merch and orders by date_added
 $stmt = $pdo->prepare('SELECT * FROM merch ORDER BY date_added DESC LIMIT ?,?');
 // bindValue will allow us to use an integer in the SQL statement, which we need to use for the LIMIT clause
 $stmt->bindValue(1, ($current_page - 1) * $num_products_on_each_page, PDO::PARAM_INT);
@@ -21,11 +21,11 @@ $total_products = $pdo->query('SELECT * FROM merch')->rowCount();
     <p><?=$total_products?> Products</p>
     <div class="products-wrapper">
         <?php foreach ($products as $product): ?>
-        <a href="index.php?page=product&id=<?=$product['item_id']?>" class="product">
-            <img src="imgs/<?=$product['item_img']?>" width="200" height="200" alt="<?=$product['item_name']?>">
-            <span class="name"><?=$product['item_name']?></span>
+        <a href="index.php?page=product&id=<?=$product['itemID']?>" class="product">
+            <img src="imgs/<?=$product['itemImg']?>" width="200" height="200" alt="<?=$product['itemName']?>">
+            <span class="name"><?=$product['itemName']?></span>
             <span class="price">
-                &dollar;<?=$product['item_price']?>
+                &dollar;<?=$product['itemPrice']?>
             </span>
         </a>
         <?php endforeach; ?>

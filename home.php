@@ -16,11 +16,11 @@ $recently_added_products = $stmt->fetchALL(PDO::FETCH_ASSOC);
     <h2>Featured Prodcuts</h2>
     <div class="products">
         <?php foreach ($recently_added_products as $product): ?>
-        <a href="index.php?page=product&id=<?=$product['item_id']?>" class="product">
-            <img src="imgs/<?=$product['item_img']?>" width="200" height="200" alt="<?=$product['item_name']?>">
-            <span class="name"><?=$product['item_name']?></span>
+        <a href="index.php?page=product&id=<?=$product['itemID']?>" class="product">
+            <img src="imgs/<?=$product['itemImg']?>" width="200" height="200" alt="<?=$product['itemName']?>">
+            <span class="name"><?=$product['itemName']?></span>
             <span class="price">
-                &dollar;<?=$product['item_price']?>
+                &dollar;<?=$product['itemPrice']?>
             </span>
         </a>
         <?php endforeach; ?>

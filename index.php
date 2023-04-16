@@ -1,11 +1,11 @@
 <?php
 session_start();
-// Include functions and connect to the database using PDO MySQL
+// functions page will be used in place of coding template on every other page, included here
 include 'functions.php';
 $pdo = pdo_connect_mysql();
 
-// default page is set to home 
+// home is default landing page 
 $page = isset($_GET['page']) && file_exists($_GET['page'] . '.php') ? $_GET['page'] : 'home';
-// Include and show the requested page
+// include and show the requested page
 include $page . '.php';
 ?>

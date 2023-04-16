@@ -90,7 +90,7 @@ header .link-icons a span {
 main .featured {
 	display: flex;
 	flex-direction: column;
-	background-image: url(imgs/siteImage7.jpg);
+	background-image: url(imgs/allianceGamingLogo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 500px;
