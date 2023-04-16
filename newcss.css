@@ -114,6 +114,7 @@ header #header-content .icon {
 }
 
 header #header-content nav.toplinks {
+    font-family: 'Karla', sans-serif;
     position: absolute;
     right: 0px;
     bottom: 15px;
@@ -122,6 +123,7 @@ header #header-content nav.toplinks {
     text-align: right;
 }
 header #header-content nav.botlinks {
+    font-family: 'Karla', sans-serif;
     position: absolute;
     right: 0px;
     bottom: -45px;
@@ -329,6 +331,7 @@ dt {
     display: block;
 }
 #footer .top .left dl dd {
+    font-family: 'Karla', sans-serif;
     margin: 0;
     line-height: 2em;
     text-transform: uppercase;
