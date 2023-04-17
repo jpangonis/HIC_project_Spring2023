@@ -564,3 +564,47 @@ email{
     padding: 10px;
     display: block;
 }
+.history-headers{
+    margin: auto;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    line-height: 32px;
+    font-family: 'Karla', sans-serif;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 8px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .about-card{
+    display: flex;
+    padding: 15px 15px 15px 15px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.about-image{
+    text-align: center;
+    display:block;
+    margin: auto;
+    background-color: #ADC1D0;
+    width: 40%;
+    height: 80%;
+}
+.about-info{
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: #ADC1D0;
+    width: 40%;
+    height: 80%;
+}
