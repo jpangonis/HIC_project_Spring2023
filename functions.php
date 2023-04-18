@@ -1,6 +1,6 @@
 <?php
 function pdo_connect_mysql() {
-    // Update the details below with your MySQL details
+    // connection variables
     $DATABASE_HOST = 'localhost';
     $DATABASE_USER = 'root';
     $DATABASE_PASS = '';
@@ -28,8 +28,12 @@ echo <<<EOT
             <div class="content-wrapper">
                 <h1>Alliance Gaming Merch</h1>
                 <nav>
-                    <a href="index.php">Home</a>
-                    <a href="index.php?page=products">Products</a>
+                    <a href="/htdocs/home.html">home</a>
+                    <a href="/htdocs/aboutus.html">about us</a>
+                    <a href="/htdocs/career.html">career</a>
+                    <a href="/htdocs/history.html">history</a>
+                    <a href="index.php">merch store</a>
+                    <a href="index.php?page=products">products</a>
                 </nav>
                 <div class="link-icons">
                     <a href="index.php?page=cart">

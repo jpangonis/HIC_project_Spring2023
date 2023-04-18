@@ -92,7 +92,8 @@ main .featured {
 	flex-direction: column;
 	background-image: url(imgs/allianceGamingLogo.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
 	height: 500px;
 	align-items: center;
 	justify-content: center;
@@ -102,9 +103,9 @@ main .featured h2 {
 	display: inline-block;
 	margin: 0;
 	width: 1050px;
-	font-family:-apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	font-family:  -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
 	font-size: 68px;
-	color: #FFFFFF;
+	color: black;
 	padding-bottom: 10px;
 }
 main .featured p {
@@ -112,7 +113,7 @@ main .featured p {
 	margin: 0;
 	width: 1050px;
 	font-size: 24px;
-	color: #FFFFFF;
+	color: black;
 }
 main .recentlyadded h2 {
 	display: block;
