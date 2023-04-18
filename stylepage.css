@@ -102,7 +102,7 @@ main .featured h2 {
 	display: inline-block;
 	margin: 0;
 	width: 1050px;
-	font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+	font-family:-apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
 	font-size: 68px;
 	color: #FFFFFF;
 	padding-bottom: 10px;
