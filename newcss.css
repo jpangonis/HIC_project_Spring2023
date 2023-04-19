@@ -39,7 +39,7 @@ html, body {
 
 body {
     margin: 0px;
-    overflow-y: scroll; overflow-x:hidden;
+    overflow-y: scroll; overflow-x:auto;
 
 
 }
@@ -70,7 +70,7 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    min-width: 950px;
+    min-width: 1000px;
     height: 200px;
     overflow: hidden;
     background-color: #ffffff;
@@ -144,7 +144,7 @@ nav {
 header #header-content nav.toplinks a {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 8.5px;
+    font-size: 9.5px;
     letter-spacing: 3px;
     margin-left: 30px;
     padding-top: 7px;
@@ -155,7 +155,7 @@ header #header-content nav.toplinks a {
 header #header-content nav.botlinks a {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 8.5px;
+    font-size: 9.5px;
     letter-spacing: 3px;
     margin-left: 30px;
     padding-top: 7px;
@@ -191,12 +191,30 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
+
+#title{
+position: absolute;
+width: 100%;
+min-width: 1000px;
+top: 200px;
+height: 70px;
+text-align: center;
+padding-top: 20px;
+background-color: #efefef;
+vertical-align: middle;
+font-family: Garamond;
+font-weight: 950;
+font-variant: small-caps;
+color:#4A7A8D;
+font-size: 24px;
+}
+
 #sidebar {
     width: 100%;
-    min-width: 900px;
+    min-width: 1000px;
     position: absolute;
     z-index: 999;
-    top: 20%;
+    top: 270px;
     left: 0;
 }
 #sidebar .box{
@@ -212,6 +230,7 @@ a:-webkit-any-link {
     text-align: center;
 }
 
+
 #sidebar .box .text{
     padding: 0 0 0 0;
     position: absolute;
@@ -222,7 +241,7 @@ a:-webkit-any-link {
     font-family: Garamond;
     font-weight: bold;
     font-variant: small-caps;
-    font-size: 22px;
+    font-size: 20px;
     color: #444444;
     opacity: 1;
     letter-spacing: 1px;
@@ -239,7 +258,7 @@ a:-webkit-any-link {
     font-family: 'Karla', sans-serif;
     font-variant: small-caps;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
     color: #444444;
     opacity: 1;
     letter-spacing: 3px;
@@ -320,7 +339,7 @@ dl {
     -webkit-background-clip: text;
     font-family: Garamond;
     font-variant: small-caps;
-    font-weight: 800;
+    font-weight:1000;
 }
 *, *:before, *:after {
 
@@ -335,7 +354,7 @@ dt {
     margin: 0;
     line-height: 2em;
     text-transform: uppercase;
-    font-size: 8.5px;
+    font-size: 9.5px;
     letter-spacing: 3px;
 
     color: #888888;
@@ -384,7 +403,7 @@ header #header-content nav.botlinks .search-bar input{
     border-radius: 35px;
     border: 1px solid #eeeeee;
     padding: 0 30px 0 10px;
-    font-size: 8.5px;
+    font-size: 9.5px;
     color: #ADC1D0;
     background-color: #ffffff;
     display:block;
@@ -396,7 +415,7 @@ input, button {
     outline: none;
     background: none;
     font-family: 'Karla', sans-serif;
-    font-size: 8.5px;
+    font-size: 9.5px;
 }
 button {
     display: inline;
@@ -504,22 +523,38 @@ main{
     padding-bottom: 30 px;
 }
 h1{
-    text-align: center;
-    color: #4A7A8D;
+padding-top: 40px;
+font-family: Garamond;
+font-weight: 600;
+font-variant: small-caps;
+color:#666666;
+font-size: 22px;
+text-align: center;
 }
-h2{
-    color: #ADC1D0;
-    text-decoration-line: underline;
-    font-size: medium;
-    padding-bottom: 15px;
+#apply{
+    z-index:1002;
+    position: relative;
+    background-color: #D4E3EB;
+    padding: 20px 20px 20px 30px;
+    text-align: justify !important;
+    
+       
+}
+
+#apply a{
+   font-family: Garamond;
+    font-weight: 950;
+    font-variant: small-caps;
+    color:  #4A7A8D; !important; 
+    font-size: 18px;
 }
 
 .contact-card{
     display: flex;
-    padding: 15px 15px 15px 15px;
-    width: 50%;
-    height: 50%;
-    text-align: center;
+    padding: 60px 15px 15px 15px;
+    width: 70%;
+    
+    text-align: justify !important;
     margin: auto;
 }
 
@@ -527,23 +562,33 @@ h2{
     text-align: center;
     display:block;
     margin: auto;
-    background-color: #ADC1D0;
-    width: 40%;
-    height: 80%;
+    background-color: white;
+    width: 60%;
 }
 .contact-info{
     text-align: center;
     display: block;
-    margin: auto;
-    background-color: #ADC1D0;
-    width: 40%;
-    height: 80%;
-}
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #efefef;
+    width: 60%;
+
+    font-family: sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 3px;
+    line-height: 2em; 
+    color: #666666;
+    text-transform: uppercase
+;}
 label{
-    font-size: 150%;
-    font-weight: bold;
-    display:block;
+    letter-spacing: 0 !important;
+    font-family: Garamond;
+    font-weight: 950;
+    font-variant: small-caps;
+    color:  #4A7A8D; !important; 
+    font-size: 18px;
     text-align: center;
+    text-transform: none !important;
 }
 name{
     display:block;
@@ -559,10 +604,17 @@ email{
 }
 .career-text{
     margin: auto;
-    width: 50%;
-    border: 3px solid black;
+    width: 40%;
+
     padding: 10px;
     display: block;
+    font-family: sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 3px;
+    line-height: 2em; 
+    color: #666666;
+    text-transform: uppercase;
+
 }
 .history-headers{
     margin: auto;
@@ -573,21 +625,24 @@ email{
     line-height: 32px;
     font-family: 'Karla', sans-serif;
 }
+
+.row{
+  align-contents: center;
+  text-align: center;
+  max-width: 60%;
+}
 .column {
     float: left;
     width: 33.33%;
     padding: 8px;
   }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+
   .about-card{
     display: flex;
-    padding: 15px 15px 15px 15px;
-    width: 50%;
-    height: 50%;
+    position: relative;
+    padding:45px 15px 15px 15px;
+    width: 70%;
+    height: auto;
     text-align: center;
     margin: auto;
 }
@@ -596,15 +651,172 @@ email{
     text-align: center;
     display:block;
     margin: auto;
-    background-color: #ADC1D0;
+    background-color: white
     width: 40%;
-    height: 80%;
+    height: auto;
 }
 .about-info{
+    padding: 30px 50px 50px 30px;
     text-align: center;
     display: block;
     margin: auto;
-    background-color: #ADC1D0;
+    background-color: #efefef;
     width: 40%;
-    height: 80%;
+    font-family: sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 3px;
+    line-height: 2em; 
+    color: #666666;
+    text-transform: uppercase;
 }
+
+#gamebox {
+position: relative;
+width: 50%; 
+
+}
+
+
+#gamebox a {
+position: absolute;
+display: inline-block;
+margin-top: 22%;
+padding-top: 5%;
+text-align: center;
+padding-bottom: 5%;
+left: 25%;
+right: 25%;
+z-index: 950;
+background: rgba(255, 255, 255, .8);
+color: #4A7A8D;
+font-family: garamond;
+font-weight: 1000;
+font-variant: small-caps;
+font-size:20px;
+transition: 200ms linear;
+
+}
+
+#gamebox a:hover {
+transform: scale(1.05);
+background: rgba(255, 255, 255, .95);
+color: #ADC1D0;
+
+}
+
+#section{
+display: inline-block;
+position: relative;
+width: 100%;
+height: 70px;
+text-align: center;
+padding-top: 20px;
+background-color: #efefef;
+vertical-align: middle;
+font-family: Garamond;
+font-weight: 950;
+font-variant: small-caps;
+color:#4A7A8D;
+font-size: 24px;
+}
+
+#section a{
+vertical-align: middle;
+font-family: Garamond;
+font-weight: 950;
+font-variant: small-caps;
+color:#4A7A8D;
+font-size: 24px;
+}
+
+
+#member{
+float: center;
+bottom: 40px;
+top:40px;
+left: 5%;
+right:5%;
+display: inline-block; 
+position: relative; 
+width: 30%;
+border-right: 1px solid #eeeeee;
+font-family: 'Karla', sans-serif;
+letter-spacing: 2px;
+font-size: 9.5px;
+color:#666666;
+text-transform: uppercase;
+line-height: 20px;
+text-align: center;
+
+}
+
+#member img {
+padding: 50px 20px;
+float: left;
+position: relative;
+width: 40%;
+}
+
+#member .text{
+
+padding:20% 10px;
+display: inline-block;
+position: relative;                     
+
+}
+
+hr {
+border: 0;
+border-top: 0.5px solid #eeeeee;
+}
+
+
+
+#awards{
+float: center;
+bottom: 40px;
+top:10px;
+left: 5%;
+right:5%;
+display: inline-block; 
+position: relative; 
+width: 30%;
+border-right: 1px solid #eeeeee;
+font-family: 'Karla', sans-serif;
+letter-spacing: 2px;
+font-size: 9.5px;
+color:#666666;
+text-transform: uppercase;
+line-height: 20px;
+text-align: center;
+
+}
+
+
+#awards img {
+padding: 50px 20px;
+float: center;
+position: relative;
+width: 100%;
+}
+
+p{ 
+padding-left: 20%; 
+padding-right: 20%; 
+font-family: 'Karla', sans-serif;
+letter-spacing: 2px;
+font-size: 9.5px;
+color:#666666;
+text-transform: uppercase;
+line-height: 20px;
+text-align: justify;
+}
+
+#awards .text{
+top: -30px;
+padding:0 0;
+display: inline-block;
+position: relative;  
+text-align: center;
+}
+
