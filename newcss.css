@@ -819,4 +819,38 @@ display: inline-block;
 position: relative;  
 text-align: center;
 }
+#project{
+float: center;
+bottom: 40px;
+top:0px;
+padding-left: 15%;
+display: flex; 
+position: relative; 
+width: 85%;
+font-family: 'Karla', sans-serif;
+letter-spacing: 2px;
+font-size: 9.5px;
+color:#666666;
+text-transform: uppercase;
+line-height: 20px;
+text-align: justify;
+
+
+}
+
+#project img {
+padding: 0px 20px;
+float: left;
+position: relative;
+width: 40%;
+}
+
+#project .text{
+
+padding:5% 10px;
+display: flex;
+position: relative;
+background-color: #efefef;
+
+}
 
